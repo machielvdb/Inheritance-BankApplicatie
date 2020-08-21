@@ -30,7 +30,7 @@ namespace Inheritance_BankApplicatie
         private void btnNieuw_Click(object sender, EventArgs e)
         {
             Rekeningkeuze f = new Rekeningkeuze();
-            f.ShowDialog();
+            f.Show();
         }
 
         private void Hoofdmenu_Load(object sender, EventArgs e)

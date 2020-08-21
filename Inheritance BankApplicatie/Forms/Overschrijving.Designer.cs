@@ -31,11 +31,11 @@
             this.lbEigenRekeningen = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbAndereRekening = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbBedrag = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbCVS = new System.Windows.Forms.TextBox();
             this.btnBevestigen = new System.Windows.Forms.Button();
             this.btnVorige = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -66,12 +66,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Andere rekening:";
             // 
-            // textBox1
+            // tbAndereRekening
             // 
-            this.textBox1.Location = new System.Drawing.Point(223, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 20);
-            this.textBox1.TabIndex = 3;
+            this.tbAndereRekening.Location = new System.Drawing.Point(223, 22);
+            this.tbAndereRekening.Name = "tbAndereRekening";
+            this.tbAndereRekening.Size = new System.Drawing.Size(168, 20);
+            this.tbAndereRekening.TabIndex = 3;
+            this.tbAndereRekening.TextChanged += new System.EventHandler(this.tbAndereRekening_TextChanged);
             // 
             // label3
             // 
@@ -82,12 +83,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Bedrag:";
             // 
-            // textBox2
+            // tbBedrag
             // 
-            this.textBox2.Location = new System.Drawing.Point(223, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 20);
-            this.textBox2.TabIndex = 5;
+            this.tbBedrag.Location = new System.Drawing.Point(223, 62);
+            this.tbBedrag.Name = "tbBedrag";
+            this.tbBedrag.Size = new System.Drawing.Size(168, 20);
+            this.tbBedrag.TabIndex = 5;
             // 
             // label4
             // 
@@ -98,12 +99,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "CVS:";
             // 
-            // textBox3
+            // tbCVS
             // 
-            this.textBox3.Location = new System.Drawing.Point(223, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 20);
-            this.textBox3.TabIndex = 7;
+            this.tbCVS.Location = new System.Drawing.Point(223, 101);
+            this.tbCVS.Name = "tbCVS";
+            this.tbCVS.Size = new System.Drawing.Size(168, 20);
+            this.tbCVS.TabIndex = 7;
             // 
             // btnBevestigen
             // 
@@ -113,6 +114,7 @@
             this.btnBevestigen.TabIndex = 8;
             this.btnBevestigen.Text = "Bevestigen";
             this.btnBevestigen.UseVisualStyleBackColor = true;
+            this.btnBevestigen.Click += new System.EventHandler(this.btnBevestigen_Click);
             // 
             // btnVorige
             // 
@@ -131,11 +133,11 @@
             this.ClientSize = new System.Drawing.Size(401, 173);
             this.Controls.Add(this.btnVorige);
             this.Controls.Add(this.btnBevestigen);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbCVS);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbBedrag);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbAndereRekening);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbEigenRekeningen);
@@ -152,11 +154,11 @@
         private System.Windows.Forms.ListBox lbEigenRekeningen;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbAndereRekening;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbBedrag;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbCVS;
         private System.Windows.Forms.Button btnBevestigen;
         private System.Windows.Forms.Button btnVorige;
     }

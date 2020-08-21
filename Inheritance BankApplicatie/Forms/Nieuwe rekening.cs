@@ -13,14 +13,14 @@ namespace Inheritance_BankApplicatie.Forms
 {
     public partial class NieuweDebit : Form
     {
-        public static string Rekeningkeuze;
+        public static string Rekeningkeuze = string.Empty;
 
         public NieuweDebit(string rekeningkeuze)
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
             Rekeningkeuze = rekeningkeuze;
-        }
+         }
 
         private void btnAanmaken_Click(object sender, EventArgs e)
         {
@@ -61,17 +61,22 @@ namespace Inheritance_BankApplicatie.Forms
                     spaar.GenereerRekeningnummer();
                     Hoofdmenu.rekeningLijst.Add(spaar);
                 }
+
+                else if (GetRekeningType() == null)
+                {
+                    MessageBox.Show("Oeps er ging iets fout.");
+                }
                 Close();
             }
         }
 
         public string GetRekeningType()
         {
-            if (Rekeningkeuze.ToLower() == "debit") return "debit";
+            if (Rekeningkeuze.Equals("debit")) return "debit";
 
-            else if (Rekeningkeuze.ToLower() == "credit") return "credit";
+            else if (Rekeningkeuze.Equals("credit")) return "credit";
 
-            else if (Rekeningkeuze.ToLower() == "spaar") return "spaar";
+            else if (Rekeningkeuze.Equals("spaar")) return "spaar";
 
             else return null;
         }

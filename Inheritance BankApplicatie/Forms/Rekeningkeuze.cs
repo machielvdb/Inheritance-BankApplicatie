@@ -28,12 +28,9 @@ namespace Inheritance_BankApplicatie.Forms
 
         private void btnBevestig_Click(object sender, EventArgs e)
         {
-            if (cbRekeningType.SelectedIndex == 0)
-            {
-                NieuweDebit f = new NieuweDebit(cbRekeningType.SelectedItem.ToString());
-                f.ShowDialog();
-                Close();
-            }
+            NieuweDebit f = new NieuweDebit(cbRekeningType.SelectedItem.ToString().ToLower());
+            f.Show();
+            Close();
         }
     }
 }

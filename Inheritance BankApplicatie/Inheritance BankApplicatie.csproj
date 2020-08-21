@@ -67,6 +67,12 @@
     <Compile Include="Forms\Overschrijving.Designer.cs">
       <DependentUpon>Overschrijving.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Pincode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pincode.Designer.cs">
+      <DependentUpon>Pincode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Rekeningdetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Overschrijving.resx">
       <DependentUpon>Overschrijving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pincode.resx">
+      <DependentUpon>Pincode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Rekeningdetails.resx">
       <DependentUpon>Rekeningdetails.cs</DependentUpon>

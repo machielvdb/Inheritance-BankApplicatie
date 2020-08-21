@@ -65,7 +65,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 167);
+            this.ClientSize = new System.Drawing.Size(424, 157);
             this.Controls.Add(this.btnOverschrijven);
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.lbRekeningen);
